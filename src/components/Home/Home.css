@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+    font-family: 'Quintessential', cursive;
+    font-size: 50px;
+    font-weight: lighter;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+}
+
+h3 {
+    font-family: 'Fondamento', cursive;
+}
+
+p {
+    font-family: 'Inconsolata', monospace;
+}
+
+aside {
+    margin: 2em;
+}
+.Home {
+    
+}
