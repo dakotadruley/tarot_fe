@@ -1,10 +1,12 @@
 export const getCard = () => {
-  return fetch(`${process.env.API_URL}/card`, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json'
-    }, 
-    body: JSON.stringify()
-  })
-    .then(res => res.json());
+  return fetch('http://localhost:3000/card')
+    .then(res => res.json())
+    .then(json => json.map(card => ({
+      id: card.id,
+      title: card.title,
+      image: card.image,
+      upright: card.upright,
+      reversed: card.reveresed,
+      correspondences: card.correspondences
+    })));
 };
