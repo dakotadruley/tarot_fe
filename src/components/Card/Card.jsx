@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Card = ({ title, image, upright, reversed }) => (
   <section>
     <h3>{title}</h3>
-    <img src={image} />
+    <img src={image}/>
     <p>{upright}</p>
     <p>{reversed}</p>
   </section>

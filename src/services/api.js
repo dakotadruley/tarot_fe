@@ -1,4 +1,4 @@
-export const getCard = () => {
+export const getCards = () => {
   return fetch('http://localhost:3000/card')
     .then(res => res.json())
     .then(json => json.map(card => ({
